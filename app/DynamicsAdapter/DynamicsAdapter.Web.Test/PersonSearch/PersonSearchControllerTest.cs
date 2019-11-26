@@ -12,14 +12,14 @@ namespace DynamicsAdapter.Web.Test.MatchFound
 {
     public class MatchFoundControllerTest
     {
-        private MatchFoundController _sut;
-        private readonly Mock<ILogger<MatchFoundController>> _loggerMock = new Mock<ILogger<MatchFoundController>>();
+        private PersonSearchController _sut;
+        private readonly Mock<ILogger<PersonSearchController>> _loggerMock = new Mock<ILogger<PersonSearchController>>();
         private readonly Mock<ISearchRequestService> _searchRequestServiceMock = new Mock<ISearchRequestService>();
 
         [SetUp]
         public void Init()
         {
-            _sut = new MatchFoundController(_loggerMock.Object, _searchRequestServiceMock.Object);
+            _sut = new PersonSearchController(_loggerMock.Object, _searchRequestServiceMock.Object);
         }
 
         [Test]
