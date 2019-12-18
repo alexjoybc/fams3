@@ -13,6 +13,8 @@
 
 ## RUN
 
+yeah
+
 Create a `.env` file from the `.env.template`
 
 Configure the necessary variables in `.env`
